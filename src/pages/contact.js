@@ -24,19 +24,19 @@ const Contact = () => {
             <Form name="contact" method="POST" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
               <Form.Group controlId="formBasicEmail">
-                <Form.Control name="name" type="text" placeholder="Name" />
+                <Form.Control id="exampleInputName" name="name" type="text" placeholder="Name" />
               </Form.Group>
 
               <Form.Group controlId="formBasicPassword">
-                <Form.Control name="email" type="email" placeholder="E-mail" />
+                <Form.Control id="exampleInputEmail" name="email" type="email" placeholder="E-mail" />
               </Form.Group>
 
               <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Control name="message" as="textarea" rows="3" placeholder="Message" />
+                <Form.Control id="exampleFormControlTextArea" name="message" as="textarea" rows="3" placeholder="Message" />
               </Form.Group>
 
               <Button variant="primary" type="submit">
-                Submit
+                Send
               </Button>
             </Form>
           </div>
