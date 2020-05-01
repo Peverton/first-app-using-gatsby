@@ -21,17 +21,18 @@ const Contact = () => {
           </div>
 
           <div className="col-md-6 mb-3">
-            <Form>
+            <Form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <Form.Group controlId="formBasicEmail">
-                <Form.Control type="text" placeholder="Name" />
+                <Form.Control name="name" type="text" placeholder="Name" />
               </Form.Group>
 
               <Form.Group controlId="formBasicPassword">
-                <Form.Control type="email" placeholder="E-mail" />
+                <Form.Control name="email" type="email" placeholder="E-mail" />
               </Form.Group>
 
               <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Control as="textarea" rows="3" placeholder="Message" />
+                <Form.Control name="message" as="textarea" rows="3" placeholder="Message" />
               </Form.Group>
 
               <Button variant="primary" type="submit">
